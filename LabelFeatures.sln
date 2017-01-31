@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelFeatures", "LabelFeatures\LabelFeatures.csproj", "{EB5DDEA3-BE79-4676-8BEB-7D86AF1FAF76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelFeaturesTesty", "LabelFeaturesTesty\LabelFeaturesTesty.csproj", "{74DC5183-CF38-4CDC-8332-C5FCD9893AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelFeaturesDomena", "LabelFeaturesDomena\LabelFeaturesDomena.csproj", "{B380B2A5-4121-4A5E-BA59-52260D2F1B11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB5DDEA3-BE79-4676-8BEB-7D86AF1FAF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5DDEA3-BE79-4676-8BEB-7D86AF1FAF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5DDEA3-BE79-4676-8BEB-7D86AF1FAF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5DDEA3-BE79-4676-8BEB-7D86AF1FAF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DC5183-CF38-4CDC-8332-C5FCD9893AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DC5183-CF38-4CDC-8332-C5FCD9893AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DC5183-CF38-4CDC-8332-C5FCD9893AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DC5183-CF38-4CDC-8332-C5FCD9893AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B380B2A5-4121-4A5E-BA59-52260D2F1B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B380B2A5-4121-4A5E-BA59-52260D2F1B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B380B2A5-4121-4A5E-BA59-52260D2F1B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B380B2A5-4121-4A5E-BA59-52260D2F1B11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
