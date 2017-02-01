@@ -11,7 +11,8 @@ namespace LabelFeatures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("LabelFeatures v1.0-beta, 31 stycznia 2017");
+            Console.WriteLine("LabelFeatures v1.1-beta, 1 lutego 2017");
+            Console.WriteLine("Etykietuj obrazy");
             Console.WriteLine("Roboczy katalog: {0}", args[0]);
             var files = Directory.GetFiles(args.First(), "*.png", SearchOption.AllDirectories);
             var labels = new SłownikEtykiet();
@@ -31,7 +32,12 @@ namespace LabelFeatures
             var fileName = "LabelFeatures_T" + DateTime.Now.ToShortDateString() + ".txt";
             Console.WriteLine("Etykietowanie " + files.Length + " plików -> " + fileName);
             var writer = new FeatureWriter(labels);
-            var records = writer.Zapisz(fileName, files);
+            writer.Zapisz(fileName, files);
+            var labelsWriter = new LabelWriter(labels);
+            var labelPath = "LabelFeatures_LabelsT" + DateTime.Now.ToShortDateString() + ".txt";
+            Console.WriteLine("Eksportowanie etykiet do pliku -> " + labelPath);
+            var records = labelsWriter.Zapisz(labelPath, files);
+            foreach (var record in records) Console.WriteLine(record);
             Console.WriteLine("Koniec.");
             Console.Read();
         }

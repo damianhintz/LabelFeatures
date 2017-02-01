@@ -1,4 +1,4 @@
-LabelFeatures v1.0-beta, 31 stycznia 2017
+LabelFeatures v1.1-beta, 1 lutego 2017
 ---
 Etykietuj obrazy
 
@@ -9,6 +9,10 @@ Etykietuj obrazy
 # Historia
 
 Do zrobienia
+
+2017-02-01 v1.1-beta
+
+* nowość: eksport statystyk etykiet
 
 2017-01-31 v1.0-beta
 

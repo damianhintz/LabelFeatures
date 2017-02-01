@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FeatureWriter.cs" />
+    <Compile Include="LabelWriter.cs" />
     <Compile Include="SłownikEtykiet.cs" />
     <Compile Include="Obraz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

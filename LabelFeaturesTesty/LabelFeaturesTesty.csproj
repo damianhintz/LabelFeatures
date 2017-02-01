@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EtykietyTest.cs" />
     <Compile Include="FeaturesTest.cs" />
+    <Compile Include="LabelWriterTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LabelFeaturesDomena\LabelFeaturesDomena.csproj">
