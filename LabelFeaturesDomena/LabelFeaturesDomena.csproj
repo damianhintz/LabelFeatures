@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FeatureWriter.cs" />
+    <Compile Include="LabelsFeaturesSplitter.cs" />
     <Compile Include="LabelWriter.cs" />
     <Compile Include="SłownikEtykiet.cs" />
     <Compile Include="Obraz.cs" />
