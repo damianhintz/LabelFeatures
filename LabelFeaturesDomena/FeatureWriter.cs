@@ -15,6 +15,7 @@ namespace LabelFeaturesDomena
         public SłownikEtykiet Labels => _labels;
         SłownikEtykiet _labels;
         public bool ShowFile { get; set; }
+        public bool UseColor { get; set; }
 
         public FeatureWriter(SłownikEtykiet labels) { _labels = labels; }
 
@@ -32,7 +33,7 @@ namespace LabelFeaturesDomena
                 var obraz = new Obraz(file);
                 var etykieta = obraz.Etykieta;
                 var labels = _labels.LabelToBinaryArray(etykieta);
-                var features = obraz.GetBitmapFeatures();
+                var features = obraz.GetBitmapFeatures(color: UseColor);
                 var labelsJoin = string.Join(" ", labels);
                 var featuresJoin = string.Join(" ", features);
                 records.Add("|labels " + labelsJoin + " |features " + featuresJoin);

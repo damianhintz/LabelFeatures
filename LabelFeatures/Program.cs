@@ -4,6 +4,7 @@ using System.Linq;
 using System.IO;
 using System.Diagnostics;
 using LabelFeaturesDomena;
+using LabelFeatures.Properties;
 
 namespace LabelFeatures
 {
@@ -11,7 +12,7 @@ namespace LabelFeatures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("LabelFeatures v1.2-beta, 1 lutego 2017");
+            Console.WriteLine("LabelFeatures v1.3-beta, 1 lutego 2017");
             Console.WriteLine("Etykietuj pliki obrazów i twórz zbiory treningowe i testowe");
             var fileOrFolder = ".";
             if (args.Any()) fileOrFolder = args.First();
@@ -54,7 +55,10 @@ namespace LabelFeatures
             foreach (var e in labels.Etykiety) Console.WriteLine(e + ": " + string.Join(",", labels.LabelToBinaryArray(e)));
             var fileName = "LabelFeatures_T" + DateTime.Now.ToShortDateString() + ".txt";
             Console.WriteLine("Etykietowanie " + files.Length + " plików -> " + fileName);
-            var writer = new FeatureWriter(labels);
+            var writer = new FeatureWriter(labels)
+            {
+                UseColor = Settings.Default.Color
+            };
             writer.Zapisz(fileName, files);
             var labelsWriter = new LabelWriter(labels);
             var labelPath = "LabelFeatures_LabelsT" + DateTime.Now.ToShortDateString() + ".txt";

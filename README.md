@@ -1,4 +1,4 @@
-LabelFeatures v1.2-beta, 1 lutego 2017
+LabelFeatures v1.3-beta, 1 lutego 2017
 ---
 Etykietuj pliki obrazów i twórz zbiory treningowe i testowe
 
@@ -40,6 +40,12 @@ Etykietuj pliki obrazów i twórz zbiory treningowe i testowe
 # Historia
 
 Do zrobienia
+
+* [ ] testy podziału plików
+
+2017-02-01 v1.3-beta
+
+* nowość: etykietowanie kolorowych obrazów (parametr konfiguracyjny Color)
 
 2017-02-01 v1.2-beta
 

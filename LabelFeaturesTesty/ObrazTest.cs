@@ -24,12 +24,21 @@ namespace LabelFeaturesTesty
         }
 
         [TestMethod]
-        public void Obraz_ShouldReturnBitmapAsFeaturesOfBytes()
+        public void Obraz_ShouldReturnGrayBitmapAsBytesArray()
         {
-            var obraz = new Obraz(fileName: @"Samples\0_I.png");
+            var obraz = new Obraz(fileName: @"Samples\Gray\0_I.png");
             obraz.Etykieta.ShouldBe("I");
             var features = obraz.GetBitmapFeatures();
             features.Count().ShouldBe(28 * 28);
+        }
+
+        [TestMethod]
+        public void Obraz_ShouldReturnColorBitmapAsBytesArray()
+        {
+            var obraz = new Obraz(fileName: @"Samples\Color\0_I.png");
+            obraz.Etykieta.ShouldBe("I");
+            var features = obraz.GetBitmapFeatures(color: true);
+            features.Count().ShouldBe(96 * 96 * 3);
         }
     }
 }
